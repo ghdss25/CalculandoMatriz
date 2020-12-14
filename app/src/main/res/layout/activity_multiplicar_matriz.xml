@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/matriz"
+    tools:context=".multiplicar_matriz">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:text="Multiplicação de Matrizes"
+            android:textColor="#FA2323"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/subtitulo"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Matriz 1"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+
+                android:id="@+id/T00"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T01"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="-48dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T02"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T03"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T04"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T05"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T06"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T07"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T08"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/subtitulo1"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-197dp"
+                android:text="Matriz 2"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+
+                android:id="@+id/T10"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T11"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T12"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T13"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T14"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T15"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T16"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T17"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T18"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/subtitulo2"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Matriz 3"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+
+                android:id="@+id/T20"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T21"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="-48dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T22"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T23"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T24"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T25"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T26"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T27"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T28"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/subtitulo3"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-199dp"
+                android:text="Matriz 4"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+
+                android:id="@+id/T30"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T31"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T32"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T33"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T34"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T35"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T36"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T37"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="281dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T38"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="347dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/buttonescolha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Conta"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-139dp"
+            android:onClick="Multiplicar_Matriz"
+            android:text="Multiplicar"
+            android:textAllCaps="false"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+</ScrollView>

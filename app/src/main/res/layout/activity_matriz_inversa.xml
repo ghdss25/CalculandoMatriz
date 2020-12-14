@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inversa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".matriz_inversa">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/black" />
+
+        <TextView
+
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Matriz Inversa"
+            android:textStyle="bold"
+            android:textColor="#050303"
+            android:textSize="40sp"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/T00"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T01"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="-48dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T02"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T03"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T04"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-49dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T05"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T06"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T07"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+
+                android:id="@+id/T08"
+                android:layout_width="58dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="-50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#EF0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+
+                android:id="@+id/buttonescolha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Conta"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="39dp"
+                android:onClick="Matriz_Inversa"
+                android:text="Inversa"
+                android:textAllCaps="false"
+                android:textSize="28sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/T9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Calculando "
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.043"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+
+                    android:id="@+id/T0"
+                    android:layout_width="62dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="145dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T1"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="178dp"
+                    android:layout_marginTop="-45dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T2"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="236dp"
+                    android:layout_marginTop="-45dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T3"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="1dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T4"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="178dp"
+                    android:layout_marginTop="-45dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T5"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="236dp"
+                    android:layout_marginTop="-45dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T6"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="1dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T7"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="178dp"
+                    android:layout_marginTop="-44dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/T8"
+                    android:layout_width="56dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="236dp"
+                    android:layout_marginTop="-45dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="[ ]"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textColorHint="#236091"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
