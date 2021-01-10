@@ -61,7 +61,7 @@ public class soma_matriz extends AppCompatActivity {
         Intent i1 = new Intent(this, Ver_soma_matriz.class);
         i1.putExtra("Extra", soma);
 
-        String n = "Soma_Matriz";
+        String n = "Somando as Matrizes";
 
         i1.putExtra("Matriz", n);
         startActivity(i1);

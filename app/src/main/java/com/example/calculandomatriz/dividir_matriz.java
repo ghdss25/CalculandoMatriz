@@ -63,9 +63,9 @@ public class dividir_matriz extends AppCompatActivity {
         Intent i1 = new Intent(this, ver_divisao_matriz.class);
         i1.putExtra("Extra", dividir);
 
-        String n = "Divisão as Matrizes";
+        String n = "Divisão de Matrizes";
 
-        i1.putExtra("Matriz", n);
+        i1.putExtra("Matriz Divisão", n);
         startActivity(i1);
     }
 }

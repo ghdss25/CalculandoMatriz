@@ -61,7 +61,7 @@ public class subtrair_matriz extends AppCompatActivity {
         Intent i1 = new Intent(this, Ver_subtracao_matriz.class);
         i1.putExtra("Extra", subtrair);
 
-        String n = "Subtrair Matriz";
+        String n = "Subtraindo as Matrizes";
 
         i1.putExtra("Matriz", n);
         startActivity(i1);

@@ -64,7 +64,7 @@ public class matriz_determinante extends AppCompatActivity {
         Intent i1 = new Intent(this, ver_matriz_determinante.class);
         i1.putExtra("Extra", determinante);
 
-        String n = "Matriz Inversa";
+        String n = "Matriz Determinante";
 
         i1.putExtra("Matriz", n);
         startActivity(i1);
