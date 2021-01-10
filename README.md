@@ -38,7 +38,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
     $ Compilar o Projeto já na própria IDE do Android Studio
 ```
 
-## Apresentação do Projeto - Menu 
+## Apresentação do Projeto - Cálculo das Matrizes 
 
 <h1 align = "center">
     <img src="Calculo de Matrizes.gif">
